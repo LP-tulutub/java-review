@@ -17,7 +17,7 @@ public class DesignModeTest {
  *  行为模式：
  *      模板方法模式、命令模式、跌代器模式、观察者模式、中介模式、备忘录模式、解释器模式、状态模式、策略模式、职责链模式、访问者模式
  * 2.单例模式实现？
- *  饿汉式、懒汉式、双重检测锁式(不建议使用)、静态内部类式、枚举单例
+ *  饿汉式、懒汉式、双重检测锁式、静态内部类式、枚举单例
  */
 //饿汉式
 class SingletonDemo1 {
@@ -453,13 +453,115 @@ class TemplateClient {
  *  是针对面对对象的7大原则的实现
  * 12.你在开发中都用到了那些设计模式？用在什么场合？
  * 13.请对你所熟悉的一个设计模式进行介绍？
+ **
+ * 14.装饰设计模式？
  */
-
-
-
-
-
-
+interface ICar {
+    void move();
+}
+//ConcreteComponent 具体构件角色(真实对象)
+class CarD implements ICar {
+    @Override
+    public void move() {
+        System.out.println("陆地上跑！");
+    }
+}
+//Decorator装饰角色
+class SuperCar implements ICar {
+    protected ICar car;
+    public SuperCar(ICar car) {
+        super();
+        this.car = car;
+    }
+    @Override
+    public void move() {
+        car.move();
+    }
+}
+//ConcreteDecorator具体装饰角色
+class FlyCar extends SuperCar {
+    public FlyCar(ICar car) {
+        super(car);
+    }
+    public void fly(){
+        System.out.println("天上飞！");
+    }
+    @Override
+    public void move() {
+        super.move();
+        fly();
+    }
+}
+//ConcreteDecorator具体装饰角色
+class WaterCar extends SuperCar {
+    public WaterCar(ICar car) {
+        super(car);
+    }
+    public void swim(){
+        System.out.println("水上游！");
+    }
+    @Override
+    public void move() {
+        super.move();
+        swim();
+    }
+}
+//ConcreteDecorator具体装饰角色
+class AICar extends SuperCar {
+    public AICar(ICar car) {
+        super(car);
+    }
+    public void autoMove(){
+        System.out.println("自动跑！");
+    }
+    @Override
+    public void move() {
+        super.move();
+        autoMove();
+    }
+}
+/**
+ * 15.策略模式
+ */
+class Client {
+    public static void main(String[] args) {
+        Strategy s1 = new NewCustomerManyStrategy();
+        Context ctx = new Context(s1);
+        ctx.pringPrice(998);
+    }
+}
+interface Strategy {
+    public double getPrice(double  standardPrice);
+}
+class NewCustomerFewStrategy implements Strategy {
+    @Override
+    public double getPrice(double standardPrice) {
+        System.out.println("不打折，原价");
+        return standardPrice;
+    }
+}
+class NewCustomerManyStrategy implements Strategy {
+    @Override
+    public double getPrice(double standardPrice) {
+        System.out.println("打九折");
+        return standardPrice*0.9;
+    }
+}
+class Context {
+    private Strategy strategy;	//当前采用的算法对象
+    //可以通过构造器来注入
+    public Context(Strategy strategy) {
+        super();
+        this.strategy = strategy;
+    }
+    //可以通过set方法来注入
+    public void setStrategy(Strategy strategy) {
+        this.strategy = strategy;
+    }
+    public void pringPrice(double s){
+        System.out.println("您该报价："+strategy.getPrice(s));
+    }
+}
 
 
 

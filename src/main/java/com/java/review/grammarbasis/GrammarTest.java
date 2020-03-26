@@ -62,7 +62,7 @@ class SwitchTest{
  * 12.break与continue的用法？
  **
  * 13.用递归算法计算n的阶乘？
- *  my:最简单的递归+递归输出目录和下面的文件
+ *  最简单的递归+递归输出目录和下面的文件
  */
 class SimpleRecursion{
     public static void main(String[] args) {
@@ -98,7 +98,7 @@ class SimpleRecursionFile {
 }
 /**
  * 14.冒泡排序法代码？
- * my:基础版+优化版
+ *  基础版+优化版
  */
 class BubbleSort{
     private static void sort(int[] arr){
@@ -136,7 +136,7 @@ class BubbleSort{
 }
 /**
  * 15.选择排序法代码？
- * my:基础版
+ *  基础版
  */
 class SelectSort{
     private static void sort(int[] arr){
@@ -160,7 +160,7 @@ class SelectSort{
 }
 /**
  * 16.插入排序法代码？
- * my:基础版
+ *  基础版
  */
 class InsertSort{
     private static void sort(int[] arr){
@@ -328,7 +328,7 @@ class StaticTestRun2{
  *  另一种是按引用传递（call by reference：传递的是对象的引用，即对象的存储地址）
  *  前者不能改变实参的数值
  *  后者虽然不能改变实参的参考地址，但可以通过该地址访问地址中的内容从而实现内容的改变
- * 55.在类方法中不可用this来调用本类的类办法，类方法是在类加载时被加载到方法区存储的，此时还没有创建对象，所以不能使用this或者super关键字
+ * 55.在类方法中可用this来调用本类的类办法，类方法是在类加载时被加载到方法区存储的，此时还没有创建对象，所以不能使用this或者super关键字
  * 56.Java语言中的方法必定隶属于某一类（对象），调用方法与过程或函数相同
  * 57.Java接口的修饰符可以为abstract
  * 58.存在使(i+1<i)的数
@@ -656,7 +656,10 @@ class InversionString{
  *  接口分离原则ISP：最小接口原则，接口的设计与被依赖都遵循不能“过胖”
  *  迪米特原则LOD：一个软件实体应当尽可能少地与其他实体发生相互作用、每一个软件单位对其他的单位都只有最少的知识，而且局限于那些与本单位密切相关的软件单位
  *  组合/聚合复用原则CARP：一个组合关系的成分对象是不能与另一个组合关系共享
- *
+ * 109.缓存池？
+ *  new Integer(123) 与 Integer.valueOf(123) 的区别在于
+ *  new Integer(123) 每次都会新建一个对象
+ *  Integer.valueOf(123) 会使用缓存池中的对象，多次调用会取得同一个对象的引用
  */
 
 

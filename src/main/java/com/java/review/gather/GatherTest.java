@@ -1,6 +1,7 @@
 package com.java.review.gather;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class GatherTest {
 }
@@ -18,6 +19,7 @@ class MapStructure{
         Collection collection = null;
         Iterator iterator = null;
         Collections collections = null;
+        ConcurrentHashMap m = null;
     }
 }
 /**
