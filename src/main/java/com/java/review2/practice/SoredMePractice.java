@@ -1,7 +1,7 @@
 package com.java.review2.practice;
 
 /**
- * 复习情况：3/9 ③ 3/12 ⑦ 3/19 ⑩⑤
+ * 复习情况：3/9 ③ 3/12 ⑦ 3/19 ⑩⑤ 4/3 ③⑩
  */
 
 import java.util.*;
@@ -75,8 +75,7 @@ public class SoredMePractice {
         return null;//null
     }
 
-    /**
-     * break
+    /**break
      * Input:
      *      nums = {2,0,2,1,1,0}
      * Output: 001122

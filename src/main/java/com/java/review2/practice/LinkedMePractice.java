@@ -6,7 +6,7 @@ import com.java.review2.rely.PrintLinked;
 import java.util.Stack;
 
 /**
- * 复习情况：3/17 ③ 3/20 ⑦
+ * 复习情况：3/17 ③ 3/20 ⑦ 3/27 ⑩⑤
  */
 public class LinkedMePractice {
     public static void main(String[] args) {

@@ -6,7 +6,7 @@ public class MathMe {
     public static void main(String[] args) {
         MathMe mathMe = new MathMe();
         // countPrimes
-        System.out.println("MathMe: " + mathMe.countPrimes(10));
+        System.out.println("countPrimes: " + mathMe.countPrimes(10));
         // gcd
         System.out.println("gcd: " + mathMe.gcd(10, 15));
         // convertToBase7

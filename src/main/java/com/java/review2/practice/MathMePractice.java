@@ -2,13 +2,13 @@ package com.java.review2.practice;
 
 
 /**
- * 复习情况：3/9 ③ 3/12 ⑦ 3/19 ⑩⑤
+ * 复习情况：3/9 ③ 3/12 ⑦ 3/19 ⑩⑤ 4/3 ③⑩
  */
 public class MathMePractice {
     public static void main(String[] args) {
         MathMePractice mathMe = new MathMePractice();
         // countPrimes
-        System.out.println("MathMe: " + mathMe.countPrimes(10));
+        System.out.println("countPrimes: " + mathMe.countPrimes(10));
         // gcd
         System.out.println("gcd: " + mathMe.gcd(10, 15));
         // convertToBase7
@@ -111,7 +111,7 @@ public class MathMePractice {
      *      26进制
      * condition: 进制转换，换位运算26进制
      */
-    public String convertToTitle(int n) {
+    public String convertToTitle(int num) {
         //答题
 
         return null;//null

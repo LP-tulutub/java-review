@@ -2,10 +2,7 @@ package com.java.review2.datastructure;
 
 import com.java.review2.rely.PrintArray;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class ArrayAndMatrixMe {
@@ -147,6 +144,15 @@ public class ArrayAndMatrixMe {
             else hi = mid - 1;
         }
         return lo;
+    }
+    public int kthSmallest2(int[][] matrix, int k) {
+        //答题
+        List<Integer> list = new ArrayList<>();
+        for (int i=0; i<matrix.length; i++)
+            list.addAll(Arrays.stream(matrix[i]).boxed().collect(Collectors.toList()));
+        Collections.sort(list);
+
+        return list.get(k-1);
     }
 
     /**

@@ -5,7 +5,7 @@ import com.java.review2.rely.TreeNode;
 import java.util.*;
 
 /**
- * 复习情况：3/14 ③ 3/17 ④ 3/21 ⑦
+ * 复习情况：3/14 ③ 3/17 ④ 3/21 ⑦ 3/28 ⑦ 4/4 ⑩⑤
  */
 public class TreeMePractice2 {
     public static void main(String[] args) {

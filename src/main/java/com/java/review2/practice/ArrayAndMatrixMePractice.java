@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * 复习情况：3/10 ③ 3/13 ⑦ 3/20 ⑦
+ * 复习情况：3/10 ③ 3/13 ⑦ 3/20 ⑦ 3/27 ⑩⑤
  */
 public class ArrayAndMatrixMePractice {
     public static void main(String[] args) {
@@ -201,7 +201,7 @@ public class ArrayAndMatrixMePractice {
         return -1;//-1
     }
 
-    /**
+    /**break
      * Input:
      *      arr = {1,0,2,3,4}
      * Output: 4

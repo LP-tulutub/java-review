@@ -1,7 +1,7 @@
 package com.java.review2.practice;
 
 /**
- * 复习情况：2/29 ③ 3/3 ⑦ 3/10 ⑩⑤ 3/25 ⑩⑤
+ * 复习情况：2/29 ③ 3/3 ⑦ 3/10 ⑩⑤ 3/25 ⑩⑤ 4/10 ⑩⑤
  */
 public class BitOperationPractice {
     public static void main(String[] args) {

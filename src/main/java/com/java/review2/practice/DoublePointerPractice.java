@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 
 /**
- * 复习情况：3/5 ③ 3/8 ⑦ 3/15 ⑩⑤
+ * 复习情况：3/5 ③ 3/8 ⑦ 3/15 ⑩⑤ 3/30 ③⑩
  */
 public class DoublePointerPractice {
     public static void main(String[] args) {
@@ -86,7 +86,7 @@ public class DoublePointerPractice {
     private static String reverseVowels(String s) {
         //答题
 
-        return s;//s
+        return null;//null
     }
 
     /**
@@ -151,7 +151,7 @@ public class DoublePointerPractice {
     private static String findLongestWord(String s, List<String> d) {
         //答题
 
-        return "-1";//"-1"
+        return null;//null
     }
     private static boolean isSubstr(String s, String target) {
         //答题

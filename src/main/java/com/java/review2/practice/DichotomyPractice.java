@@ -1,7 +1,7 @@
 package com.java.review2.practice;
 
 /**
- * 复习情况：2/29 ③ 3/3 ⑦ 3/10 ⑩⑤ 3/25 ⑩⑤
+ * 复习情况：2/29 ③ 3/3 ⑦ 3/10 ⑩⑤ 3/25 ⑩⑤ 4/10 ③⑩
  */
 public class DichotomyPractice {
     public static void main(String[] args) {
@@ -60,12 +60,6 @@ public class DichotomyPractice {
      */
     private static char nextGreatestLetter(char[] letters, char target) {
         //答题
-        int l = 0, h = letters.length;
-        while (l < h){
-            int m = l + (h-l)/2;
-            if (letters[m] > target) h = m - 1;
-            else l = m + 1;
-        }
 
         return '-';//'-'
     }

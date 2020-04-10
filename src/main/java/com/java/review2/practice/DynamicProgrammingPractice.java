@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.OptionalInt;
 
 /**
- * 复习情况：3/3 ③ 3/6 ⑦ 3/13 ⑩⑤
+ * 复习情况：3/3 ③ 3/6 ⑦ 3/13 ⑩⑤ 3/28 ⑩⑤
  */
 public class DynamicProgrammingPractice {
     public static void main(String[] args) {
@@ -71,7 +71,7 @@ public class DynamicProgrammingPractice {
         return -1;//-1
     }
 
-    /**
+    /**break
      * Input:
      *      nums = {10, 5, 6, 7, 9, 10}
      * Output: 25
@@ -219,6 +219,7 @@ public class DynamicProgrammingPractice {
      */
     private static int lengthOfLIS(int[] nums) {
         //答题
+
 
         return -1;//-1
     }
